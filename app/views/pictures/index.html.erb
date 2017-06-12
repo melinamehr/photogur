@@ -7,7 +7,17 @@
   <!-- <img src="<%= picture.url %>" alt="<%= picture.title %>"> -->
 <% end %>
 
-<!-- <% @pictures.each do |picture| %>
-  <p><%= picture.title %>, <%= picture.artist %></p>
-  <img src="<%= picture.url %>" alt="<%= picture.title %>">
-<% end %> -->
+<h1>PHOTOS 1 MONTH AND OLDER</h1>
+  <% @month_old_pictures.each do |picture| %>
+   <li><%= picture.count %></li>
+   <% end %>
+ </p>
+
+------
+
+<h1>MOST RECENT PICTURES</h1>
+<ul>
+  <% @most_recent_pictures.each do |picture| %>
+    <li><%= picture.title %></li>
+  <% end %>
+</ul>

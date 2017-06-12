@@ -9,17 +9,48 @@
 Picture.create(
   title:  'The old church on the coast of White sea',
   artist: 'Sergey Ershov',
-  url:    'http://bitmakerlabs.s3.amazonaws.com/photogur/house.jpg'
+  url:    'http://bitmakerlabs.s3.amazonaws.com/photogur/girl.jpg',
+  created_at: 2.years.ago
 )
 
 Picture.create(
   title:  'Sea Power',
   artist: 'Stephen Scullion',
-  url:    'http://bitmakerlabs.s3.amazonaws.com/photogur/wave.jpg'
+  url:    'http://bitmakerlabs.s3.amazonaws.com/photogur/girl.jpg',
+  created_at: 18.months.ago
 )
 
 Picture.create(
   title:  'Into the Poppies',
   artist: 'John Wilhelm',
-  url:    'http://bitmakerlabs.s3.amazonaws.com/photogur/girl.jpg'
+  url:    'http://bitmakerlabs.s3.amazonaws.com/photogur/girl.jpg',
+  created_at: 13.months.ago
+)
+
+Picture.create(
+  title:  'Ver 2 The old church on the coast of White sea',
+  artist: 'Sergey Ershov',
+  url:    'http://bitmakerlabs.s3.amazonaws.com/photogur/girl.jpg',
+  created_at: 10.months.ago
+)
+
+Picture.create(
+  title:  'Ver 3 The old church on the coast of White sea',
+  artist: 'Sergey Ershov',
+  url:    'http://bitmakerlabs.s3.amazonaws.com/photogur/girl.jpg',
+  created_at: 1.month.ago
+)
+
+Picture.create(
+  title:  'Ver 4 The old church on the coast of White sea',
+  artist: 'Sergey Ershov',
+  url:    'http://bitmakerlabs.s3.amazonaws.com/photogur/house.jpg',
+  created_at: 1.week.ago
+)
+
+Picture.create(
+  title:  'Ver 5 The old church on the coast of White sea',
+  artist: 'Sergey Ershov',
+  url:    'http://bitmakerlabs.s3.amazonaws.com/photogur/house.jpg',
+  created_at: 1.day.ago
 )
