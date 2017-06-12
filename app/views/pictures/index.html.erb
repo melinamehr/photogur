@@ -7,10 +7,11 @@
   <!-- <img src="<%= picture.url %>" alt="<%= picture.title %>"> -->
 <% end %>
 
-<h1>PHOTOS 1 MONTH AND OLDER</h1>
+<h1><%= @month_old_pictures.size %> PHOTOS 1 MONTH AND OLDER</h1>
   <% @month_old_pictures.each do |picture| %>
-   <li><%= picture.count %></li>
+   <li><%= picture.title %></li>
    <% end %>
+
  </p>
 
 ------
