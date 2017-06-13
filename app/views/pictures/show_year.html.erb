@@ -1,0 +1,14 @@
+
+<% @pictures.each do |picture| %>
+  <% if picture.created_at.strftime("%Y") == params[:id] %>
+
+<p><%= picture.title %>, <%= picture.artist %></p>
+<%= image_tag(picture.url) %>
+
+<p><%= picture.title %>, <%= picture.artist %></p>
+<img src="<%= picture.url %>">
+
+
+<% end %>
+
+<% end %>

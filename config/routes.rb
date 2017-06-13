@@ -11,11 +11,9 @@ Rails.application.routes.draw do
   get 'pictures/:id/edit' => "pictures#edit"
   patch 'pictures/:id' => "pictures#update"
 
-  get 'pictures/2017' => "pictures#this_year"
-
-  get 'pictures/2016' => "pictures#one_year_old"
-
   delete 'pictures/:id' => 'pictures#destroy'
+
+  get 'show_year/:id' => 'pictures#show_year'
 
 
 end

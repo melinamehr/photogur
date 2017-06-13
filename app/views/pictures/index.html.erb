@@ -1,9 +1,9 @@
 <h1>Pictures</h1>
 <%= link_to("New Picture", "/pictures/new") %>
 --
-<%= link_to("2017 Pictures", "/pictures/2017") %>
+<%= link_to("2017 Pictures", "/show_year/2017") %>
 --
-<%= link_to("2016 Pictures", "/pictures/2016") %>
+<%= link_to("2016 Pictures", "/show_year/2016") %>
 
 <% @pictures.each do |picture| %>
   <p><%= picture.title %>, <%= picture.artist %></p>
@@ -14,6 +14,7 @@
 <h1><%= @month_old_pictures.size %> PHOTOS 1 MONTH AND OLDER</h1>
   <% @month_old_pictures.each do |picture| %>
    <li><%= picture.title %></li>
+
    <% end %>
 
  </p>

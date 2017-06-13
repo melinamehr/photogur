@@ -10,6 +10,7 @@ class PicturesController < ApplicationController
 
   def show
    @picture = Picture.find(params[:id])
+
  end
 
  def new
@@ -51,5 +52,10 @@ class PicturesController < ApplicationController
       @picture.destroy
       redirect_to "/pictures"
   end
+
+  def show_year
+    @pictures = Picture.all
+    end
+
 
  end
