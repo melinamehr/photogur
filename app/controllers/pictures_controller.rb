@@ -4,7 +4,8 @@ class PicturesController < ApplicationController
     @most_recent_pictures = Picture.most_recent_five
     @pictures = Picture.all
     @month_old_pictures = Picture.where("created_at <= ?", 1.month.ago)
-
+    @one_year_old = Picture.pictures_created_in_year(2016)
+    @this_year = Picture.pictures_created_in_year(2017)
   end
 
   def show
@@ -50,6 +51,5 @@ class PicturesController < ApplicationController
       @picture.destroy
       redirect_to "/pictures"
   end
-
 
  end

@@ -1,5 +1,9 @@
 <h1>Pictures</h1>
 <%= link_to("New Picture", "/pictures/new") %>
+--
+<%= link_to("2017 Pictures", "/pictures/2017") %>
+--
+<%= link_to("2016 Pictures", "/pictures/2016") %>
 
 <% @pictures.each do |picture| %>
   <p><%= picture.title %>, <%= picture.artist %></p>

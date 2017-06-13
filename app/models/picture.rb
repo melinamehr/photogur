@@ -12,4 +12,11 @@ class Picture < ActiveRecord::Base
       Picture.where("created_at < ?", time)
     end
 
+    def self.pictures_created_in_year(year)
+      start_year = DateTime.new(year)
+      end_year = DateTime.new(year).end_of_year
+      Picture.where("created_at BETWEEN ? and ?", start_year, end_year)
+    end
 end
+
+# create a date that starts with 2017/2016 etc...
