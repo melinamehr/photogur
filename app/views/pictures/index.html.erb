@@ -1,9 +1,16 @@
 <h1>Pictures</h1>
-<%= link_to("New Picture", "/pictures/new") %>
---
-<%= link_to("2017 Pictures", "/show_year/2017") %>
---
-<%= link_to("2016 Pictures", "/show_year/2016") %>
+<ul>
+<li><%= link_to("New Picture", "/pictures/new") %></li>
+
+<li><%= link_to("2017 Pictures", "/show_year/2017") %></li>
+
+<li><%= link_to("2016 Pictures", "/show_year/2016") %></li>
+
+<li><%= link_to("Back to Pictures", "/pictures") %></li>
+
+<li><%= link_to("New User", "/users/new") %></li>
+</ul>
+
 
 <% @pictures.each do |picture| %>
   <p><%= picture.title %>, <%= picture.artist %></p>
